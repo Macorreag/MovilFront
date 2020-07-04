@@ -8,6 +8,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	background-color: #F8F8FC;
+	color: #58506b;
 }
 
 #Home{
@@ -18,7 +19,7 @@ body{
 /* ********************* */
 
 #Home h1 {
-	color: #58506b;
+	
 	font-style: normal;
 	font-size: 50px;
 	line-height: 25px; 	
@@ -28,8 +29,8 @@ body{
 	padding: 25px;
 }
 
-#Home nav #bell{
-	height: 65px;
+#Home nav .icon{
+	height: 58px;
 }
 
 
