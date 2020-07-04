@@ -12,7 +12,7 @@ body{
 }
 
 #Home{
-	padding: 5vw;
+	padding: 6vw;
 }
 
 
@@ -86,4 +86,18 @@ body{
 	font-size: 40px;
 	border-radius: var(--border-of-cards);
 	padding: 7% 5% ; /*Top Right Buttom left */;
+}
+
+#goals .card{
+	border-radius: var(--border-of-cards);
+	border: none;
+	padding: 7% 5% ; /*Top Right Buttom left */;
+}
+
+#goals .card img{
+	width: 20%;
+}
+
+#goals .card .card-body{
+	font-size: 40px;
 }
