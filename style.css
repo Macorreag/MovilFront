@@ -1,10 +1,21 @@
+/* General Styles */
+:root{
+  --border-of-cards: 50px;
+  --general-padding: 5vw;
+}
+
+
 body{
 	font-family: 'Open Sans', sans-serif;
+	background-color: #F8F8FC;
 }
 
 #Home{
 	padding: 5vw;
 }
+
+
+/* ********************* */
 
 #Home h1 {
 	color: #58506b;
@@ -14,7 +25,6 @@ body{
 }
 
 #Home nav{
-	background-color: white;
 	padding: 25px;
 }
 
@@ -39,13 +49,13 @@ body{
 
 #Home #ValueCard{
 	height: 28vh;
-	margin: 1vw;
+
 	color: white;
 	background: linear-gradient(180deg, rgba(44, 82, 216, 0) 0%, rgba(44, 82, 216, 0.4) 100%), #54D1ED;
 	background-blend-mode: multiply, normal;
 	/* Card shadow 1 */
 	box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);
-	border-radius: 50px;
+	border-radius: var(--border-of-cards);
 	padding: 10% 5% 10% ; /*Top Right Buttom left */
 }
 #Home #Value{
@@ -65,4 +75,14 @@ body{
 #ValueCard .ValueTitle{
 	font-size: 40px;
 	font-weight: bold;
+}
+
+
+/* Invest Summary */
+#InvestSummary{
+	background-color: white;
+	display: block;
+	font-size: 40px;
+	border-radius: var(--border-of-cards);
+	padding: 7% 5% ; /*Top Right Buttom left */;
 }
