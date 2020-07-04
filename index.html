@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Ahorro Mockup</title>
+    <meta name="viewport" initial-scale=0.5>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
@@ -11,6 +12,7 @@
 
   <body>
     <!-- partial:index.partial.html -->
+
     <div id="Home" class="container-fluid">
       <div class="row">
         <nav class="col navbar">
@@ -19,8 +21,8 @@
         </nav>
       </div>
 
-      <div class="row">
-        <div id="InvestCard" class="col">
+      <div  class="row ">
+        <div id="InvestCard"  class="generalCard col">
           <img src="./images/Profile.png" alt="Mujer Sentada" />
           <div id="ValueCard">
             <div id="ValueProfile">
@@ -38,8 +40,8 @@
         </div>
       </div>
 
-      <div class="row">
-        <div id="InvestSummary"  class="col">
+      <div class="row ">
+        <div id="InvestSummary"  class="col generalCard">
           <div class="row justify-content-between">
             <div class="col">Inversión</div>
             <div class="col text-right">$1.600.000</div>
@@ -60,19 +62,33 @@
       </div>
 
       <div id="goals" class="row">
-        <div class="col card">
+        <div class="col card generalCard">
           <img src="./images/Beach.png" alt="Iconbeach" >
           <div class="card-body">
             Viaje a Islas Canarias
           </div>
         </div>
-        <div class="col card">
+        <div class="col card generalCard">
           <img src="./images/Computer.png" alt="Computer" >
           <div class="card-body">
             MacBook Pro
           </div>
         </div>
 
+      </div>
+
+      <!-- Portfolio View -->
+
+      <div id="portfolioTitle" class="row">
+        <nav class="col navbar">
+          <h1 class="title_v2">Conoce tu portafolio</h1>
+          <span class="badge badge-success">Estratega</span>
+        </nav>
+      </div>
+
+
+      <div id="portfolioView" class="row generalCard">
+        Tu dinero se invierte de la forma más eficiente de acuerdo al perfil de riesgo asignado por nuestro RoboAdvisor.
       </div>
 
 

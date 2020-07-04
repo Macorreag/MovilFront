@@ -1,13 +1,14 @@
 /* General Styles */
 :root{
   --border-of-cards: 50px;
-  --general-padding: 5vw;
+  --general-padding: 7% 5% ; /*Top Right Buttom left */;
 }
 
 
 body{
 	font-family: 'Open Sans', sans-serif;
-	background-color: #F8F8FC;
+	/* Change temporaly for development process */
+	background-color: black;
 	color: #58506b;
 }
 
@@ -15,11 +16,16 @@ body{
 	padding: 6vw;
 }
 
+.generalCard{
+	border-radius: var(--border-of-cards);
+	padding: var(--general-padding);
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
 
 /* ********************* */
 
 #Home h1 {
-	
 	font-style: normal;
 	font-size: 50px;
 	line-height: 25px; 	
@@ -44,19 +50,18 @@ body{
 	padding-right: 2vh;
 	position: relative;
 }
-#Home #InvestCard{
-	padding-top: 2vh;
+#Home #InvestCard {
+
+	padding: 0;
 }
 
 #Home #ValueCard{
 	height: 28vh;
-
 	color: white;
 	background: linear-gradient(180deg, rgba(44, 82, 216, 0) 0%, rgba(44, 82, 216, 0.4) 100%), #54D1ED;
 	background-blend-mode: multiply, normal;
 	/* Card shadow 1 */
-	box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);
-	border-radius: var(--border-of-cards);
+	box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);	border-radius: var(--border-of-cards);
 	padding: 10% 5% 10% ; /*Top Right Buttom left */
 }
 #Home #Value{
@@ -85,13 +90,14 @@ body{
 	display: block;
 	font-size: 40px;
 	border-radius: var(--border-of-cards);
-	padding: 7% 5% ; /*Top Right Buttom left */;
+	/* padding: 7% 5%; */ /*Top Right Buttom left*/
 }
 
+/* Goals Cards */
+
 #goals .card{
-	border-radius: var(--border-of-cards);
 	border: none;
-	padding: 7% 5% ; /*Top Right Buttom left */;
+	/* padding: 7% 5% ; Top Right Buttom left; */
 }
 
 #goals .card img{
@@ -100,4 +106,28 @@ body{
 
 #goals .card .card-body{
 	font-size: 40px;
+}
+
+/*Portfolio*/
+#portfolioTitle .badge{
+	font-size: 25px;
+	background-color:#E4FFEE;
+}
+
+#portfolioTitle .badge-success{
+	/* Success Soft */
+	background: #E4FFEE;
+	/* Success */
+	border: 0.5px solid #41CF69;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 10px 1px 10px 4px ;
+	color: #41CF69;
+}
+
+/* View Of Portfolio */
+
+#portfolioView{
+	border-radius: var(--border-of-cards);
+	background-color: white;
 }
