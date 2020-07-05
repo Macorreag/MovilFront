@@ -22,6 +22,7 @@ body {
   padding: var(--general-padding);
   margin-top: 2vh;
   margin-bottom: 2vh;
+  background-color: white;
 }
 
 .flipped {
@@ -200,4 +201,19 @@ body {
 }
 #portfolioView #HoldingDescription #controls img{
 	height: 30px;
+}
+
+
+#Home #blog ul .menu1{
+	font-size: 30px;
+	line-height: 30px;
+}
+
+#Home #blog ul h5{
+	font-size: 43px;
+	line-height: 55px;
+}
+
+#Home #blog ul .media img{
+	height: 135px;
 }
