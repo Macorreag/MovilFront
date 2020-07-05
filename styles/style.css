@@ -21,7 +21,7 @@ body {
   border-radius: var(--border-of-cards);
   padding: var(--general-padding);
   margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-bottom: 3vh;
 }
 
 .flipped {
@@ -87,6 +87,7 @@ body {
 
 #Home #ValueCard #ValueAmount {
   font-size: 90px;
+  font-weight: bold;
 }
 
 #ValueCard .ValueTitle {
