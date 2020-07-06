@@ -1,0 +1,111 @@
+:root {
+  --notch-size: min(17vw, 1000px);
+  --menu-width: max(92vw, 500px);
+  --menu-height: min(8.5vh, 10000px);
+  --btn-padding: 1vh;
+  --space: min(1.5vw, 50px);
+}
+
+#boom {
+  z-index: 5;
+  position: fixed;
+  bottom: 4vh;
+  left: 4vw;
+}
+
+#menu-notch {
+  /*sombra*/
+  width: var(--menu-width);
+  height: var(--menu-height);
+  min-height: 50px;
+  min-width: 50px;
+  border-radius: calc(var(--menu-height) / 2);
+  position: relative;
+  overflow: hidden;
+}
+
+#menu-notch::before {
+  content: "";
+  display: inline-block;
+  /*for notch style*/
+  background: transparent;
+  width: var(--notch-size);
+  height: var(--notch-size);
+  border-radius: 50%;
+  /*Position Notch*/
+  position: relative;
+  left: calc((var(--menu-width) / 2) - (var(--notch-size) / 2));
+  top: calc(var(--notch-size) / -2);
+  /*Menu Items*/
+  box-shadow: 0 calc(var(--notch-size) * 2) 0 var(--menu-width) blue;
+}
+
+#add-button {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  height: calc(var(--notch-size) - var(--space) * 2);
+  width: calc(var(--notch-size) - var(--space) * 2);
+  border-radius: 50%;
+  background-color: red;
+  top: calc((var(--notch-size) / -2) + var(--space));
+  left: calc((var(--menu-width) / 2) - (var(--notch-size) / 2) + var(--space));
+}
+
+#menu-overlay {
+  width: var(--menu-width);
+  height: calc(var(--menu-height));
+  border-radius: calc(var(--menu-height) / 2);
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  background-color: transparent;
+  padding-left: var(--btn-padding);
+  padding-right: var(--btn-padding);
+  /*Menu 1*/
+}
+
+.divition {
+  position: absolute;
+  display: inline-block;
+  width: calc(
+    (var(--menu-width) - (var(--btn-padding) * 2)) / 5
+  ); /*remove paddings*/
+  height: var(--menu-height);
+  text-align: center;
+  padding-bottom: 9px;
+  background-color: transparent;
+}
+
+.divition img {
+  height: 6vh;
+}
+
+#div-0 {
+  left: var(--btn-padding);
+}
+
+#div-1 {
+  left: calc(
+    (var(--menu-width) - (var(--btn-padding) * 2)) / 5 + var(--btn-padding)
+  );
+}
+#div-2 {
+  padding-top: calc( 6vh );
+  left: calc(
+    ((var(--menu-width) - (var(--btn-padding) * 2)) / 5) * 2 +
+      var(--btn-padding)
+  );
+}
+#div-3 {
+  left: calc(
+    ((var(--menu-width) - (var(--btn-padding) * 2)) / 5) * 3 +
+      var(--btn-padding)
+  );
+}
+#div-4 {
+  left: calc(
+    ((var(--menu-width) - (var(--btn-padding) * 2)) / 5) * 4 +
+      var(--btn-padding)
+  );
+}

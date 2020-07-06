@@ -2,7 +2,7 @@
 :root {
   --border-of-cards: 50px;
   --general-padding: 7% 5%; /*Top Right Buttom left */
-  --menu-height: 11vh;
+  --menu-height-space: 16vh;
   /*Colors*/
   --color-success: #41CF69;
 }
@@ -15,7 +15,7 @@ body {
 }
 
 #Home {
-  padding: 6vw 6vw var(--menu-height) 6vw;
+  padding: 6vw 6vw var(--menu-height-space) 6vw;
 }
 
 .generalCard {
@@ -205,7 +205,7 @@ body {
 }
 
 
-#Home #blog ul .menu1{
+.menu1{
 	font-size: 30px;
 	line-height: 30px;
 }
