@@ -2,7 +2,7 @@ var successColor =  getComputedStyle(document.documentElement)
 .getPropertyValue('--color-success');
 
 base_image = new Image();
-base_image.src = '../images/Robot.png';
+base_image.src = './images/Robot.png';
 
 new Chart(document.getElementById("doughnut-chart"), {
     type: 'doughnut',
