@@ -9,11 +9,21 @@
     />
 
     <link rel="stylesheet" href="./styles/style.css" />
+
+
+    
   </head>
 
   <body>
     <!-- partial:index.partial.html -->
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+      </style>
 
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    </style>
     <div id="Home" class="container-fluid">
       <div class="row">
         <nav class="col navbar">
@@ -72,11 +82,39 @@
           <div class="card-body">
             Viaje a Islas Canarias
           </div>
+          <hr>
+          <div class="row">
+            <div class="col-5 my-auto">
+              <canvas id="chartProgress" width="150px" height="150px"></canvas>
+            </div>
+            <div   class="col-7 my-auto">
+              <p class="caption2">
+                $1.630.000
+              </p>
+              <p class="menu1">
+                $8.000.000
+              </p>
+            </div>
+          </div>
         </div>
         <div class="col card generalCard">
           <img src="./images/Computer.png" alt="Computer" />
           <div class="card-body">
             MacBook Pro
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-5 my-auto">
+              <canvas id="chartProgress2" width="150px" height="150px"></canvas>
+            </div>
+            <div  class="col-7 my-auto">
+              <p class="caption2 ">
+                $0
+              </p>
+              <p class="menu1">
+                $7.000.000
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -164,6 +202,9 @@
     </div>
 
     <!-- partial -->
+    <script src='https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js'></script>
+    <script type="text/javascript" src="js/progress.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    
   </body>
 </html>

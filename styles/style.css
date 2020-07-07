@@ -115,16 +115,18 @@ body {
 }
 
 #goals .card img {
-  width: 20%;
+  width: 33%;
 }
 
 #goals .card .card-body {
   font-size: 40px;
 }
 
+
 /*Portfolio*/
 #portfolioTitle .badge {
   font-size: 25px;
+  line-height: 80%;
   background-color: #e4ffee;
 }
 
@@ -135,7 +137,7 @@ body {
   width: 170px;
   border: 0.5px solid var(--color-success);
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 10px;
   color: var(--color-success);
 }
@@ -152,7 +154,7 @@ body {
 }
 
 #portfolioView #HoldingDescription img {
-  height: 45px;
+  height: 43px;
 }
 
 #portfolioView #HoldingDescription .badge {
@@ -165,8 +167,9 @@ body {
 #portfolioView #HoldingDescription .badge-success {
 	background-color: var(--color-success);
 	color: white;
-	padding-left: 30px;
-	padding-right: 30px;
+	font-size:27px;
+	padding-left: 20px; 
+	padding-right: 20px; 
 }
 #portfolioView #HoldingDescription{
 	letter-spacing: -0.03em;
@@ -176,6 +179,18 @@ body {
 	font-size: 35px;
 	line-height: 45px;
 }
+
+.caption2{
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: -0.03em;
+  background: linear-gradient(to bottom, rgba(44, 82, 216, 0.4) 0%, #2C52D8 100%);
+  -webkit-background-clip: text;
+  background-blend-mode: multiply;
+  -webkit-text-fill-color: #54D1ED;
+}
+
 
 #portfolioView #HoldingDescription .menu2{
 	font-size: 30px;
@@ -205,9 +220,10 @@ body {
 }
 
 
-#Home #blog ul .menu1{
+.menu1{
 	font-size: 30px;
-	line-height: 30px;
+  line-height: 30px;
+  font-weight: normal ;
 }
 
 #Home #blog ul h5{
