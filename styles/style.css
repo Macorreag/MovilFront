@@ -126,7 +126,7 @@ body {
 /*Portfolio*/
 #portfolioTitle .badge {
   font-size: 25px;
-  line-height: 80%;
+  line-height: 30px;
   background-color: #e4ffee;
 }
 
@@ -177,7 +177,7 @@ body {
 
 #portfolioView #HoldingDescription .caption1{
 	font-size: 35px;
-	line-height: 45px;
+	line-height: 70px;
 }
 
 .caption2{
@@ -213,11 +213,27 @@ body {
 }
 
 #portfolioView #HoldingDescription #controls{
-	height: 60px;
+  height: 60px;
+  height: 60px;
 }
-#portfolioView #HoldingDescription #controls img{
-	height: 30px;
+
+
+#portfolioView #HoldingDescription #controls a {
+  height: 70px;
+  width: 70px;
+  padding-top: 5px;  
+  border: 1px solid #FAF9FD;
+  margin-right: 20px;
+  margin-left:10px ;
+  border-radius: 50%;
 }
+
+#portfolioView #HoldingDescription #controls a img{
+  /* height: 40px; */
+  /* width: 40px; */
+}
+
+
 
 
 .menu1{
