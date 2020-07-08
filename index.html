@@ -9,6 +9,7 @@
     />
 
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
 
 
     
@@ -24,57 +25,138 @@
      <style>
           @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     </style>
-    <div id="Home" class="container-fluid">
-      <div class="row">
-        <nav class="col navbar">
-          <h1 class="title_v2">Hola, Camila</h1>
-          <img class="icon" src="./icons/navigation/notifications_24px.svg" alt="Bell" />
-        </nav>
-      </div>
 
-      <div class="row">
-        <div id="InvestCard" class="generalCard col">
-          <img src="./images/Profile.png" alt="Mujer Sentada" />
-          <div id="ValueCard">
-            <div id="ValueProfile">
-              Eres
-              <br />
-              estratega
-            </div>
-            <div id="Value">
-              <div class="ValueTitle">Tu Saldo</div>
-              <div id="ValueAmount">
-                $1.570.000
-              </div>
+
+
+  <!-- Menu Fixed with Notch -->
+  <div id="boom" >
+    <!-- Notch -->
+    <div id="menu-notch">
+    </div>
+    <div id="add-button">
+      <img src="./icons/navigation/ahorroPlus.svg" alt="Añadir Ahorro"
+        height="100%" width="100%" />
+    </div>
+    <!-- end of Notch -->
+    <div id="menu-overlay">
+
+      <button id="div-0" class="divition menu1" autofocus>
+        <svg width="40%" height="40%" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Inactive Path -->
+          <path class="on" fill-rule="evenodd" clip-rule="evenodd" d="M3.5 9.5H0.5L10.5 0.5L20.5 9.5H17.5V17.5H11.5V11.5H9.5V17.5H3.5V9.5ZM15.5 7.69L10.5 3.19L5.5 7.69V15.5H7.5V9.5H13.5V15.5H15.5V7.69Z" fill="#A99DC6"/>
+          <!-- Active Path -->
+          <path class="on" fill-rule="evenodd" clip-rule="evenodd" d="M3.5 9.5H0.5L10.5 0.5L20.5 9.5H17.5V17.5H11.5V11.5H9.5V17.5H3.5V9.5ZM15.5 7.69L10.5 3.19L5.5 7.69V15.5H7.5V9.5H13.5V15.5H15.5V7.69Z" fill="#54D1ED" fill-opacity="0"/>
+          <path class="on" fill-rule="evenodd" clip-rule="evenodd" d="M3.5 9.5H0.5L10.5 0.5L20.5 9.5H17.5V17.5H11.5V11.5H9.5V17.5H3.5V9.5ZM15.5 7.69L10.5 3.19L5.5 7.69V15.5H7.5V9.5H13.5V15.5H15.5V7.69Z" fill="url(#paint0_linear)" fill-opacity="0" style="mix-blend-mode:multiply"/>
+
+          <defs>
+          <linearGradient id="paint0_linear" x1="10.5" y1="0.5" x2="10.5" y2="17.5" gradientUnits="userSpaceOnUse"fill-opacity="0.4">
+          <stop stop-color="#2C52D8" stop-opacity="0"/>
+          <stop offset="1" stop-color="#2C52D8" />
+          </linearGradient>
+          </defs>
+          </svg>
+          
+        <br>
+        Inicio
+      </button>
+
+      <button id="div-1" class="divition menu1" >
+        <svg width="35%" height="35%" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Inactive Path -->
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 2C0.25 1.17 0.92 0.5 1.75 0.5C2.58 0.5 3.25 1.17 3.25 2C3.25 2.83 2.58 3.5 1.75 3.5C0.92 3.5 0.25 2.83 0.25 2ZM0.25 8C0.25 7.17 0.92 6.5 1.75 6.5C2.58 6.5 3.25 7.17 3.25 8C3.25 8.83 2.58 9.5 1.75 9.5C0.92 9.5 0.25 8.83 0.25 8ZM1.75 12.5C0.92 12.5 0.25 13.18 0.25 14C0.25 14.82 0.93 15.5 1.75 15.5C2.57 15.5 3.25 14.82 3.25 14C3.25 13.18 2.58 12.5 1.75 12.5ZM18.75 15H4.75V13H18.75V15ZM4.75 9H18.75V7H4.75V9ZM4.75 3V1H18.75V3H4.75Z" fill="#A99DC6"/>
+          <!-- Active Path -->
+          <path class="on" fill-rule="evenodd" clip-rule="evenodd" d="M0.25 2C0.25 1.17 0.92 0.5 1.75 0.5C2.58 0.5 3.25 1.17 3.25 2C3.25 2.83 2.58 3.5 1.75 3.5C0.92 3.5 0.25 2.83 0.25 2ZM0.25 8C0.25 7.17 0.92 6.5 1.75 6.5C2.58 6.5 3.25 7.17 3.25 8C3.25 8.83 2.58 9.5 1.75 9.5C0.92 9.5 0.25 8.83 0.25 8ZM1.75 12.5C0.92 12.5 0.25 13.18 0.25 14C0.25 14.82 0.93 15.5 1.75 15.5C2.57 15.5 3.25 14.82 3.25 14C3.25 13.18 2.58 12.5 1.75 12.5ZM18.75 15H4.75V13H18.75V15ZM4.75 9H18.75V7H4.75V9ZM4.75 3V1H18.75V3H4.75Z" fill="#54D1ED" fill-opacity="0"/>
+          <path class="on" fill-rule="evenodd" clip-rule="evenodd" d="M0.25 2C0.25 1.17 0.92 0.5 1.75 0.5C2.58 0.5 3.25 1.17 3.25 2C3.25 2.83 2.58 3.5 1.75 3.5C0.92 3.5 0.25 2.83 0.25 2ZM0.25 8C0.25 7.17 0.92 6.5 1.75 6.5C2.58 6.5 3.25 7.17 3.25 8C3.25 8.83 2.58 9.5 1.75 9.5C0.92 9.5 0.25 8.83 0.25 8ZM1.75 12.5C0.92 12.5 0.25 13.18 0.25 14C0.25 14.82 0.93 15.5 1.75 15.5C2.57 15.5 3.25 14.82 3.25 14C3.25 13.18 2.58 12.5 1.75 12.5ZM18.75 15H4.75V13H18.75V15ZM4.75 9H18.75V7H4.75V9ZM4.75 3V1H18.75V3H4.75Z" fill="url(#paint0_linear)" fill-opacity="0"/>
+        </svg>          
+        <br>
+        Historial
+      </button>
+
+      <button id="div-2" class="divition menu1">
+        Ahorrar
+      </button>
+
+      <button id="div-3" class="divition menu1">
+        <svg width="35%" height="35%" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Inactive Path -->
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 0C4.98 0 0.5 4.48 0.5 10C0.5 15.52 4.98 20 10.5 20C16.02 20 20.5 15.52 20.5 10C20.5 4.48 16.02 0 10.5 0ZM5.57 16.28C6 15.38 8.62 14.5 10.5 14.5C12.38 14.5 15.01 15.38 15.43 16.28C14.07 17.36 12.36 18 10.5 18C8.64 18 6.93 17.36 5.57 16.28ZM10.5 12.5C11.96 12.5 15.43 13.09 16.86 14.83C17.88 13.49 18.5 11.82 18.5 10C18.5 5.59 14.91 2 10.5 2C6.09 2 2.5 5.59 2.5 10C2.5 11.82 3.12 13.49 4.14 14.83C5.57 13.09 9.04 12.5 10.5 12.5ZM10.5 4C8.56 4 7 5.56 7 7.5C7 9.44 8.56 11 10.5 11C12.44 11 14 9.44 14 7.5C14 5.56 12.44 4 10.5 4ZM9 7.5C9 8.33 9.67 9 10.5 9C11.33 9 12 8.33 12 7.5C12 6.67 11.33 6 10.5 6C9.67 6 9 6.67 9 7.5Z" fill="#A99DC6"/>
+          <!-- Active Path -->
+          <path class="on" fill-rule="evenodd" clip-rule="evenodd" d="M10.5 0C4.98 0 0.5 4.48 0.5 10C0.5 15.52 4.98 20 10.5 20C16.02 20 20.5 15.52 20.5 10C20.5 4.48 16.02 0 10.5 0ZM5.57 16.28C6 15.38 8.62 14.5 10.5 14.5C12.38 14.5 15.01 15.38 15.43 16.28C14.07 17.36 12.36 18 10.5 18C8.64 18 6.93 17.36 5.57 16.28ZM10.5 12.5C11.96 12.5 15.43 13.09 16.86 14.83C17.88 13.49 18.5 11.82 18.5 10C18.5 5.59 14.91 2 10.5 2C6.09 2 2.5 5.59 2.5 10C2.5 11.82 3.12 13.49 4.14 14.83C5.57 13.09 9.04 12.5 10.5 12.5ZM10.5 4C8.56 4 7 5.56 7 7.5C7 9.44 8.56 11 10.5 11C12.44 11 14 9.44 14 7.5C14 5.56 12.44 4 10.5 4ZM9 7.5C9 8.33 9.67 9 10.5 9C11.33 9 12 8.33 12 7.5C12 6.67 11.33 6 10.5 6C9.67 6 9 6.67 9 7.5Z" fill="#54D1ED" fill-opacity="0"/>
+          <path class="on" fill-rule="evenodd" clip-rule="evenodd" d="M10.5 0C4.98 0 0.5 4.48 0.5 10C0.5 15.52 4.98 20 10.5 20C16.02 20 20.5 15.52 20.5 10C20.5 4.48 16.02 0 10.5 0ZM5.57 16.28C6 15.38 8.62 14.5 10.5 14.5C12.38 14.5 15.01 15.38 15.43 16.28C14.07 17.36 12.36 18 10.5 18C8.64 18 6.93 17.36 5.57 16.28ZM10.5 12.5C11.96 12.5 15.43 13.09 16.86 14.83C17.88 13.49 18.5 11.82 18.5 10C18.5 5.59 14.91 2 10.5 2C6.09 2 2.5 5.59 2.5 10C2.5 11.82 3.12 13.49 4.14 14.83C5.57 13.09 9.04 12.5 10.5 12.5ZM10.5 4C8.56 4 7 5.56 7 7.5C7 9.44 8.56 11 10.5 11C12.44 11 14 9.44 14 7.5C14 5.56 12.44 4 10.5 4ZM9 7.5C9 8.33 9.67 9 10.5 9C11.33 9 12 8.33 12 7.5C12 6.67 11.33 6 10.5 6C9.67 6 9 6.67 9 7.5Z" fill="url(#paint0_linear)" fill-opacity="0"/>
+        </svg>          
+        <br>
+        Mi perfil
+      </button>
+
+      <button id="div-4" class="divition menu1" >
+        <svg width="35%" height="35%" viewBox="0 0 17 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Inactive Path -->
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 0C1.4 0 0.5 0.9 0.5 2C0.5 3.1 1.4 4 2.5 4C3.6 4 4.5 3.1 4.5 2C4.5 0.9 3.6 0 2.5 0ZM14.5 0C13.4 0 12.5 0.9 12.5 2C12.5 3.1 13.4 4 14.5 4C15.6 4 16.5 3.1 16.5 2C16.5 0.9 15.6 0 14.5 0ZM6.5 2C6.5 0.9 7.4 0 8.5 0C9.6 0 10.5 0.9 10.5 2C10.5 3.1 9.6 4 8.5 4C7.4 4 6.5 3.1 6.5 2Z" fill="#A99DC6"/>
+          <!-- Active Path -->  
+          <path class="on" fill-rule="evenodd" clip-rule="evenodd" d="M2.5 0C1.4 0 0.5 0.9 0.5 2C0.5 3.1 1.4 4 2.5 4C3.6 4 4.5 3.1 4.5 2C4.5 0.9 3.6 0 2.5 0ZM14.5 0C13.4 0 12.5 0.9 12.5 2C12.5 3.1 13.4 4 14.5 4C15.6 4 16.5 3.1 16.5 2C16.5 0.9 15.6 0 14.5 0ZM6.5 2C6.5 0.9 7.4 0 8.5 0C9.6 0 10.5 0.9 10.5 2C10.5 3.1 9.6 4 8.5 4C7.4 4 6.5 3.1 6.5 2Z" fill="#54D1ED" fill-opacity="0"/>
+          <path class="on" fill-rule="evenodd" clip-rule="evenodd" d="M2.5 0C1.4 0 0.5 0.9 0.5 2C0.5 3.1 1.4 4 2.5 4C3.6 4 4.5 3.1 4.5 2C4.5 0.9 3.6 0 2.5 0ZM14.5 0C13.4 0 12.5 0.9 12.5 2C12.5 3.1 13.4 4 14.5 4C15.6 4 16.5 3.1 16.5 2C16.5 0.9 15.6 0 14.5 0ZM6.5 2C6.5 0.9 7.4 0 8.5 0C9.6 0 10.5 0.9 10.5 2C10.5 3.1 9.6 4 8.5 4C7.4 4 6.5 3.1 6.5 2Z" fill="url(#paint0_linear)" fill-opacity="0"/>
+        </svg>
+          
+        <br>
+        Más
+      </button>
+
+    </div>
+  </div>
+
+  <script >
+    document.getElementById('div-0').focus();
+  </script>
+
+  <!-- End Of Menu -->
+
+  <div id="Home" class="container-fluid">
+    <div class="row">
+      <nav class="col navbar">
+        <h1 class="title_v2">Hola, Camila</h1>
+        <img class="icon" src="./icons/navigation/notifications_24px.svg" alt="Bell" />
+      </nav>
+    </div>
+
+    <div class="row">
+      <div id="InvestCard" class="generalCard col">
+        <img src="./images/Profile.png" alt="Mujer Sentada" />
+        <div id="ValueCard">
+          <div id="ValueProfile">
+            Eres
+            <br />
+            estratega
+          </div>
+          <div id="Value">
+            <div class="ValueTitle">Tu Saldo</div>
+            <div id="ValueAmount">
+              $1.570.000
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <div id="InvestSummary" class="col generalCard">
-          <div class="row justify-content-between">
-            <div class="col">Inversión</div>
-            <div class="col text-right">$1.600.000</div>
-          </div>
-          <hr />
-          <div class="row justify-content-between">
-            <div class="col">Rendimiento</div>
-            <div class="col text-right">-$30.000</div>
-          </div>
+    <div class="row">
+      <div id="InvestSummary" class="col generalCard">
+        <div class="row justify-content-between">
+          <div class="col">Inversión</div>
+          <div class="col text-right">$1.600.000</div>
+        </div>
+        <hr />
+        <div class="row justify-content-between">
+          <div class="col">Rendimiento</div>
+          <div class="col text-right">-$30.000</div>
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <nav class="col navbar">
-          <h1 class="title_v2">Tus Metas</h1>
-          <img
-            class="icon"
-            src="./icons/navigation/add_circle_outline_24px.png"
-            alt="Add Icon"
-          />
-        </nav>
-      </div>
+    <div class="row">
+      <nav class="col navbar">
+        <h1 class="title_v2">Tus Metas</h1>
+        <img class="icon" src="./icons/navigation/add_circle_outline_24px.png" alt="Add Icon" />
+      </nav>
+    </div>
 
       <div id="goals" class="row">
         <div class="col card generalCard">
@@ -119,14 +201,15 @@
         </div>
       </div>
 
-      <!-- Portfolio View -->
 
-      <div id="portfolioTitle" class="row">
-        <nav class="col navbar">
-          <h1 class="title_v2">Conoce tu portafolio</h1>
-          <span class="badge badge-success">Estratega</span>
-        </nav>
-      </div>
+    <!-- Portfolio View -->
+
+    <div id="portfolioTitle" class="row">
+      <nav class="col navbar">
+        <h1 class="title_v2">Conoce tu portafolio</h1>
+        <span class="badge badge-success">Estratega</span>
+      </nav>
+    </div>
 
       <div id="portfolioView" class="row generalCard">
         <div id="HoldingDonut" class="col-5">
@@ -157,49 +240,49 @@
             </a>
           </div>
         </div>
-        <!-- Breack  -->
-        <div class="w-100"></div>
-        <p>
-          Tu dinero se invierte de la forma más eficiente de acuerdo al perfil
-          de riesgo asignado por nuestro RoboAdvisor.
-        </p>
+     <!-- Breack  -->
+      <div class="w-100"></div>
+      <p>
+        Tu dinero se invierte de la forma más eficiente de acuerdo al perfil
+        de riesgo asignado por nuestro RoboAdvisor.
+      </p>
+    </div>
+
+
+    <div id="blog" class="row">
+      <div class="generalCard">
+        <ul class="list-unstyled">
+          <li class="media">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">10 gastos que debes evitar</h5>
+              <p class="menu1">
+                Aunque el 66% de los adultos recibió educación para el ahorro, apenas el 44% ahorra de manera fomal.
+              </p>
+            </div>
+            <img class="ml-5" src="./images/blog1.png" alt="Mano sacando dolares de la billetera frente al computador">
+          </li>
+          <hr>
+          <li class="media my-4">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">10 gastos que debes evitar</h5>
+              <p class="menu1">
+                Aunque el 66% de los adultos recibió educación para el ahorro, apenas el 44% ahorra de manera fomal.
+              </p>
+            </div>
+            <img class="ml-5" src="./images/blog2.png" alt="Manos estrechadas con guantes">
+          </li>
+          <hr>
+          <li class="media">
+            <div class="media-body mr-6">
+              <h5 class="mt-0 mb-1">10 gastos que debes evitar</h5>
+              <p class="menu1 ">
+                Aunque el 66% de los adultos recibió educación para el ahorro, apenas el 44% ahorra de manera fomal.
+              </p>
+            </div>
+            <img class="ml-5" src="./images/blog3.png" alt="Mano entregando tarjeta de credito mastercard">
+          </li>
+        </ul>
       </div>
-
-
-      <div id="blog" class="row">
-        <div class="generalCard">
-          <ul class="list-unstyled">
-            <li class="media">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">10 gastos que debes evitar</h5>
-                <p class="menu1">
-                  Aunque el 66% de los adultos recibió educación para el ahorro, apenas el 44% ahorra de manera fomal.
-                </p>
-              </div>
-              <img class="ml-5"  src="./images/blog1.png" alt="Mano sacando dolares de la billetera frente al computador">
-            </li>
-            <hr>
-            <li class="media my-4">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">10 gastos que debes evitar</h5>
-                <p class="menu1">
-                  Aunque el 66% de los adultos recibió educación para el ahorro, apenas el 44% ahorra de manera fomal.
-                </p>
-              </div>
-              <img class="ml-5"  src="./images/blog2.png" alt="Manos estrechadas con guantes">
-            </li>
-            <hr>
-            <li class="media">
-              <div class="media-body mr-6">
-                <h5 class="mt-0 mb-1">10 gastos que debes evitar</h5>
-                <p class="menu1 ">
-                  Aunque el 66% de los adultos recibió educación para el ahorro, apenas el 44% ahorra de manera fomal.
-                </p>  
-              </div>
-              <img class="ml-5" src="./images/blog3.png" alt="Mano entregando tarjeta de credito mastercard">
-            </li>
-          </ul>
-        </div>
     </div>
 
     <!-- partial -->

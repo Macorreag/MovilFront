@@ -2,7 +2,7 @@
 :root {
   --border-of-cards: 50px;
   --general-padding: 7% 5%; /*Top Right Buttom left */
-  --menu-height: 11vh;
+  --menu-height-space: 16vh;
   /*Colors*/
   --color-success: #41CF69;
 }
@@ -14,8 +14,12 @@ body {
   color: #58506b;
 }
 
+h1{
+  font-weight: bold;
+}
+
 #Home {
-  padding: 6vw 6vw var(--menu-height) 6vw;
+  padding: 6vw 6vw var(--menu-height-space) 6vw;
 }
 
 .generalCard {
@@ -232,8 +236,6 @@ body {
   /* height: 40px; */
   /* width: 40px; */
 }
-
-
 
 
 .menu1{
