@@ -1,16 +1,18 @@
 :root {
-  --notch-size: min(17vw, 1000px);
-  --menu-width: max(92vw, 500px);
-  --menu-height: min(8.5vh, 10000px);
-  --btn-padding: 1vh;
-  --space: min(1.5vw, 50px);
+  --notch-size: min(19vw, 180px);
+  --menu-width: min(92vw,900px);
+  --menu-height: max(8.5vh, 100px);
+  --btn-padding: min(1vh,10px);
+  --space: min(1.5vw,15px);
 }
 
 #boom {
   z-index: 5;
   position: fixed;
+  max-width: 900px;
+  max-height: 300px;
   bottom: 4vh;
-  left: 4vw;
+  right: 4vw;
 }
 
 #menu-notch {
@@ -37,7 +39,8 @@
   left: calc((var(--menu-width) / 2) - (var(--notch-size) / 2));
   top: calc(var(--notch-size) / -2);
   /*Menu Items*/
-  box-shadow: 0 calc(var(--notch-size) * 2) 0 var(--menu-width) blue;
+  box-shadow: 0 calc(var(--menu-height) * 2) 0 var(--menu-width) #FFFFFF;
+  max-width: 900px;
 }
 
 #add-button {
@@ -47,21 +50,23 @@
   height: calc(var(--notch-size) - var(--space) * 2);
   width: calc(var(--notch-size) - var(--space) * 2);
   border-radius: 50%;
-  background-color: red;
   top: calc((var(--notch-size) / -2) + var(--space));
   left: calc((var(--menu-width) / 2) - (var(--notch-size) / 2) + var(--space));
 }
 
 #menu-overlay {
   width: var(--menu-width);
-  height: calc(var(--menu-height));
+  height:var(--menu-height);
   border-radius: calc(var(--menu-height) / 2);
+  max-width: 900px;
   position: absolute;
+  max-height: 150px;
   overflow: hidden;
   top: 0;
   background-color: transparent;
   padding-left: var(--btn-padding);
   padding-right: var(--btn-padding);
+  color: #A99DC6;
   /*Menu 1*/
 }
 
@@ -77,8 +82,18 @@
   background-color: transparent;
 }
 
-.divition img {
-  height: 6vh;
+.divition svg {
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+  height: 4vh;
+}
+
+.div-1 svg{
+  height: 2vh;
+}
+
+.divition svg path:hover {
+  fill: url(#paint0_linear);
 }
 
 #div-0 {
@@ -91,7 +106,7 @@
   );
 }
 #div-2 {
-  padding-top: calc( 6vh );
+  padding-top:  5.6vh ;
   left: calc(
     ((var(--menu-width) - (var(--btn-padding) * 2)) / 5) * 2 +
       var(--btn-padding)
