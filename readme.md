@@ -1,5 +1,8 @@
 
 
+## Selección Framework 
+
+Bootstrap es un Framework de Front-End enfocado principalmente en Mobile First algo que lo encaja muy facilmente en este proyecto.
 
 
 ## App Desing Settings

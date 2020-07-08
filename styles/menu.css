@@ -60,14 +60,21 @@
   border-radius: calc(var(--menu-height) / 2);
   max-width: 900px;
   position: absolute;
-  max-height: 150px;
-  overflow: hidden;
+  max-height: 180px;
+
   top: 0;
-  background-color: transparent;
+
   padding-left: var(--btn-padding);
   padding-right: var(--btn-padding);
-  color: #A99DC6;
+  
   /*Menu 1*/
+}
+
+#menu-overlay button{
+  font-family: "Open Sans", sans-serif;
+  border:none;
+  font-size: 32px;
+  outline:0;
 }
 
 .divition {
@@ -79,7 +86,8 @@
   height: var(--menu-height);
   text-align: center;
   padding-bottom: 9px;
-  background-color: transparent;
+  background-color: #7d1b1b00;
+  color: #A99DC6;
 }
 
 .divition svg {
@@ -92,9 +100,6 @@
   height: 2vh;
 }
 
-.divition svg path:hover {
-  fill: url(#paint0_linear);
-}
 
 #div-0 {
   left: var(--btn-padding);
@@ -123,4 +128,18 @@
     ((var(--menu-width) - (var(--btn-padding) * 2)) / 5) * 4 +
       var(--btn-padding)
   );
+}
+
+
+
+
+.divition:focus  svg .on,
+button:focus {
+  /* Show Cover to simulate active  */
+  fill-opacity: 0.6;
+  /* Font Change on Focus */
+  font-weight: bold;
+  background: -webkit-linear-gradient(180deg, #54D1ED 0%, rgba(44, 82, 216, 0.4) 100%, #54D1ED);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
