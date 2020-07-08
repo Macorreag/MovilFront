@@ -93,6 +93,7 @@ h1{
 
 #Home #ValueCard #ValueAmount {
   font-size: 90px;
+  font-weight: bold;
 }
 
 #ValueCard .ValueTitle {

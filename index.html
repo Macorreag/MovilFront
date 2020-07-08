@@ -9,10 +9,10 @@
     />
 
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />    
+    <link rel="stylesheet" href="./styles/carouselNews.css" />
 
 
-    
   </head>
 
   <body>
@@ -25,6 +25,7 @@
      <style>
           @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     </style>
+
 
 
 
@@ -221,22 +222,29 @@
           <span class="badge badge-success">15%</span>
           <div class="caption1">FIC Old Mutual Efectivo</div>
           <div class="caption1">
-            <b>$240.000</b> 
+            <b>$240.000</b>
           </div>
           <div class="menu2">
             Tipo de activo
           </div>
-          <p >
-            Renta fija 
-            <br>
-            Depósito a la fija 
+          <p>
+            Renta fija
+            <br />
+            Depósito a la fija
           </p>
-          <div id="controls" class="row justify-content-between ">
-            <a href="#" class="previous round text-center">
-              <img src="./icons/navigation/chevron_left_24px.png" alt="Previus Icon" />
+          <div id="controls" class="row justify-content-between">
+            <a href="#" class="col-4 previous round text-center">
+              <img
+                src="./icons/navigation/chevron_left_24px.png"
+                alt="Previus Icon"
+              />
             </a>
-            <a href="#" class="next round text-center">
-              <img class="flipped" src="./icons/navigation/chevron_left_24px.png" alt="Previus Icon" />
+            <a href="#" class="col-4 next round text-center">
+              <img
+                class="flipped"
+                src="./icons/navigation/chevron_left_24px.png"
+                alt="Previus Icon"
+              />
             </a>
           </div>
         </div>
@@ -247,6 +255,77 @@
         de riesgo asignado por nuestro RoboAdvisor.
       </p>
     </div>
+
+    <div class="row">
+      <nav class="col-12 navbar">
+        <h1 class="title_v2">Las pautas del ahorro</h1>
+      </nav>
+    </div>
+
+
+    <div id="carouselNews" class="row">
+      <div class="carousel slide col-12" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./images/thumb.png" alt="..." />
+            <div class="carousel-caption">
+              <h5>Esto es AHORRO</h5>
+              <p>
+                Conoce como nuestro RoboAdvisor crea el mejor portafolio de
+                inversión para ti.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item col-12">
+            <video
+              width="110%"
+              playsinline="playsinline"
+              autoplay="autoplay"
+              muted="muted"
+              loop="loop"
+            >
+              <source
+                src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem ipsum</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit cursus
+                pulvinar, turpis per rutrum penatibus ligula suscipit
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item col-12">
+            <img class="d-block w-100" src="./images/thumb.png" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Foo</h5>
+              <p>
+                Diam mi ligula et habitasse non, dapibus maecenas vel
+                accumsan, sapien sagittis massa nunc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+      <div id="indicators" class="row">
+        <div class="col-12">
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselNews"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselNews" data-slide-to="1"></li>
+            <li data-target="#carouselNews" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+
 
 
     <div id="blog" class="row">
@@ -283,6 +362,11 @@
           </li>
         </ul>
       </div>
+
+   
+     
+
+      
     </div>
 
     <!-- partial -->
@@ -290,6 +374,10 @@
     <script type="text/javascript" src="js/progress.js"></script>
     <script type="text/javascript" src="js/FICpie.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"
+      integrity="sha512-oHBLR38hkpOtf4dW75gdfO7VhEKg2fsitvHZYHZjObc4BPKou2PGenyxA5ZJ8CCqWytBx5wpiSqwVEBy84b7tw=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

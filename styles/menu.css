@@ -7,7 +7,7 @@
 }
 
 #boom {
-  z-index: 5;
+  z-index: 20;
   position: fixed;
   max-width: 900px;
   max-height: 300px;

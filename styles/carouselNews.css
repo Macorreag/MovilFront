@@ -1,0 +1,59 @@
+#carouselNews{
+    margin-top: 2vh;
+}
+#carouselNews .carousel-inner {
+    border-radius: var(--border-of-cards);
+}
+
+#carouselNews .carousel-caption{
+    background-image:url('../images/carousel_cover.svg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    text-align: left;
+    padding-top: 6%;
+    padding-left: 5%;
+   
+    right: 0;
+    left: 0;
+    height: 40%;
+    bottom: 0%;
+    width: 100%;
+}
+
+#carouselNews .carousel-caption h5{
+    font-size: 45px;
+    font-weight: 600;
+}    
+#carouselNews .carousel-caption p{
+    font-size: 24px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    padding-right: 30%;
+}
+
+
+#indicators{
+    height: 70px;
+}
+
+#indicators .carousel-indicators{
+    justify-content: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.carousel-indicators li{
+    width: 15px !important;
+    
+    margin:10px;
+    border-radius: 50%;
+    /* Primary Soft */
+    background: #D7C7FF;
+}
+
+
