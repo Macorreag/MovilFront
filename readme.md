@@ -4,7 +4,7 @@
    
    >    Diseño: HighTech
 
-## [Visualización del Proyecto](https://macorreag.github.io/MovilFront/) 👉👉https://macorreag.github.io/MovilFront/👈👈:  
+## [Visualización del Proyecto](https://macorreag.github.io/MovilFront/) 👉👉 https://macorreag.github.io/MovilFront/ :  
 ## [Visualización del Código del Proyecto](https://github.com/Macorreag/MovilFront) 👨‍💻https://github.com/Macorreag/MovilFront👨‍💻 
 
 **En Dispositivos Móviles**
